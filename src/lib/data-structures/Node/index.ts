@@ -1,14 +1,27 @@
-export interface INode {
-	next?: INode | null;
-	prev?: INode | null;
+export interface ISingleNode {
+	next?: ISingleNode | null;
+}
+export interface IDoubleNode {
+	next?: IDoubleNode | null;
+	prev?: IDoubleNode | null;
 }
 
-export class Node<T> implements INode {
+export class Node<T> implements ISingleNode {
 	public value: T;
 
-	public next: INode | null;
+	public next: Node<T> | null;
 
-	public prev: INode | null;
+	constructor(value: T) {
+		this.value = value;
+		this.next = null;
+	}
+}
+export class DoublyNode<T> implements IDoubleNode {
+	public value: T;
+
+	public next: IDoubleNode | null;
+
+	public prev: IDoubleNode | null;
 
 	constructor(value: T) {
 		this.value = value;
@@ -16,21 +29,12 @@ export class Node<T> implements INode {
 		this.prev = null;
 	}
 }
-
-export class HeadNode implements INode {
-	public next: INode | null;
+export class DummyNode implements IDoubleNode {
+	public next: IDoubleNode | null;
+	public prev: IDoubleNode | null;
 
 	constructor() {
 		this.next = null;
-	}
-}
-
-export class TailNode implements INode {
-	public readonly prev: INode | null;
-
-	constructor() {
 		this.prev = null;
 	}
 }
-
-export default Node;

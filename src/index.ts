@@ -1,3 +1,3 @@
-import { Node } from './lib/data-structures/Node';
+import { DoublyNode, Node } from './lib/data-structures/Node';
 
-export { Node };
+export { Node, DoublyNode };
