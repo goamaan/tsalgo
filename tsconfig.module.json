@@ -1,0 +1,10 @@
+{
+	"extends": "./tsconfig",
+	"compilerOptions": {
+		"target": "esnext",
+		"outDir": "build/module",
+		"module": "esnext",
+		"lib": ["DOM", "ES2017"]
+	},
+	"exclude": ["node_modules/**"]
+}
