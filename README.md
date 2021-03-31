@@ -1,3 +1,3 @@
-# typescript-ds
+# tsalgo
 
-Typed Implementations of Data Structures and utility functions/algorithms in TypeScript
+Typed data structures, algorithms, and utility functions library for JavaScript/TypeScript
