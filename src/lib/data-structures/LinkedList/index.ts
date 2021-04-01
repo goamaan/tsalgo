@@ -17,6 +17,10 @@ export default class LinkedList<T> implements ILinkedList<T> {
 	private tail: DummyNode;
 	private _size: number;
 
+	/**
+	 * Default LinkedList implementation using double pointers.
+	 * Use this over SinglyLinkedList unless memory is very limited.
+	 */
 	constructor() {
 		this._size = 0;
 		this.head = new DummyNode();
@@ -25,10 +29,19 @@ export default class LinkedList<T> implements ILinkedList<T> {
 		this.tail.prev = this.head;
 	}
 
+	/**
+	 * Adds an element to the front (head) of the LinkedList
+	 * @return {number} The size of the LinkedList
+	 */
 	get size(): number {
 		return this._size;
 	}
 
+	/**
+	 * Adds an element to the end (tail) of the LinkedList
+	 * @param {*} element
+	 * @return {number} The new size of the LinkedList
+	 */
 	push(element: T): number {
 		const node = new DoublyNode(element);
 		const currTail = this.tail.prev as IDoubleNode;
@@ -40,6 +53,11 @@ export default class LinkedList<T> implements ILinkedList<T> {
 		return this._size;
 	}
 
+	/**
+	 * Adds an element to the front (head) of the LinkedList
+	 * @param {*} element
+	 * @return {number} The new size of the LinkedList
+	 */
 	unshift(element: T): number {
 		const node = new DoublyNode(element);
 		const currHead = this.head.next as IDoubleNode;
@@ -51,6 +69,10 @@ export default class LinkedList<T> implements ILinkedList<T> {
 		return this._size;
 	}
 
+	/**
+	 * Removes the element at the end of the LinkedList
+	 * @return {*} The removed element
+	 */
 	pop(): T | undefined {
 		if (this.isEmpty()) {
 			return undefined;
@@ -65,6 +87,10 @@ export default class LinkedList<T> implements ILinkedList<T> {
 		return oldTail.value;
 	}
 
+	/**
+	 * Removes the element at the front of the LinkedList
+	 * @return {*} The removed element
+	 */
 	shift(): T | undefined {
 		if (this.isEmpty()) {
 			return undefined;
@@ -79,28 +105,48 @@ export default class LinkedList<T> implements ILinkedList<T> {
 		return oldHead.value;
 	}
 
+	/**
+	 * Returns true if the LinkedList is empty
+	 * @return {boolean}
+	 */
 	isEmpty(): boolean {
 		return this._size === 0;
 	}
 
+	/**
+	 * Returns the element at the front of the LinkedList without removing it
+	 * @return {*} The element at the front of the LinkedList
+	 */
 	peek(): T | undefined {
 		return this.isEmpty()
 			? undefined
 			: (this.head.next as DoublyNode<T>).value;
 	}
 
+	/**
+	 * Returns the element at the front of the LinkedList without removing it
+	 * @return {*} The element at the front of the LinkedList
+	 */
 	peekFirst(): T | undefined {
 		return this.isEmpty()
 			? undefined
 			: (this.head.next as DoublyNode<T>).value;
 	}
 
+	/**
+	 * Returns the element at the end of the LinkedList without removing it
+	 * @return {*} The element at the end of the LinkedList
+	 */
 	peekLast(): T | undefined {
 		return this.isEmpty()
 			? undefined
 			: (this.tail.prev as DoublyNode<T>).value;
 	}
 
+	/**
+	 * Transforms the LinkedList to an Array
+	 * @return {Array<T>} An array of elements
+	 */
 	toArray(): T[] {
 		let curr = this.head.next as DoublyNode<T>;
 		const ret = [];
@@ -111,7 +157,12 @@ export default class LinkedList<T> implements ILinkedList<T> {
 		return ret;
 	}
 
-	static from<T>(arr: T[]): LinkedList<T> {
+	/**
+	 * Creates a LinkedList from an Array of elements
+	 * @param {Array<T>} arr
+	 * @return {LinkedList} A new LinkedList
+	 */
+	static from<T>(arr: Array<T>): LinkedList<T> {
 		const ret = new LinkedList<T>();
 		arr.forEach((e) => ret.push(e));
 		return ret;

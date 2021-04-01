@@ -1,3 +1,3 @@
-import { DoublyNode, Node } from './lib/data-structures/Node';
-
-export { Node, DoublyNode };
+import LinkedList from './lib/data-structures/LinkedList';
+import { defaultEquals } from './lib/utils';
+export { LinkedList, defaultEquals };
