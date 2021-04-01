@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout source code"
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
  
       - name: Update version in package.json
         uses: maks-stupak/gh-action-bump-version@v7.1.5
