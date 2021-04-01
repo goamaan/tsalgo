@@ -9,28 +9,18 @@ on:
 
 jobs:
 
-  test:
+  test-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: yarn install --frozen-lockfile && yarn build && yarn test
+      - run: yarn install --frozen-lockfile && yarn build && yarn test && yarn doc:html
   
-  build-doc:
-    runs-on: ubuntu-latest
-    needs: [test]
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: yarn doc:html
-
   documentation:
     runs-on: ubuntu-latest
-    needs: [build-doc]
+    needs: [test-build]
     steps:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.3
