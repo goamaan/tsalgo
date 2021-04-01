@@ -36,6 +36,7 @@ jobs:
 
   documentation:
     runs-on: ubuntu-latest
+    needs: [build-doc]
     steps:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.7.3
