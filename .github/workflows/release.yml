@@ -22,8 +22,17 @@ jobs:
     needs: [test]
     runs-on: ubuntu-latest
     steps:
-      - uses: maks-stupak/gh-action-bump-version@v7.1.5
-
+      - name: "Checkout source code"
+        uses: "actions/checkout@v2"
+        with:
+          ref: ${{ github.ref }}
+      - name: "Automated Version Bump"
+        uses: "phips28/gh-action-bump-version@master"
+        with:
+          tag-prefix: ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
   build-doc:
     runs-on: ubuntu-latest
     needs: [version]
