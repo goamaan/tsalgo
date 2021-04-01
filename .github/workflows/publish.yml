@@ -27,8 +27,8 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: yarn prepare-release
       - run: yarn install --frozen-lockfile
+      - run: yarn prepare-release
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
