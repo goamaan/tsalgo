@@ -41,7 +41,7 @@
 import { LinkedList } from 'tsalgo';
 ```
 
-or with a default import
+or import all
 
 ```typescript
 import * as Collections from 'tsalgo';
