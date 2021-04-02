@@ -1,8 +1,9 @@
+![npm bundle size](https://img.shields.io/bundlephobia/min/tsalgo?color=orange&style=for-the-badge)
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+![npm](https://img.shields.io/npm/dw/tsalgo?color=9cf&style=for-the-badge)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/amaan18/tsalgo/CI?style=for-the-badge)
 [![MIT License][license-shield]][license-url]
-
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -99,6 +100,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [stars-url]: https://github.com/amaan18/tsalgo/stargazers
 [issues-shield]: https://img.shields.io/github/issues/amaan18/tsalgo.svg?style=for-the-badge
 [issues-url]: https://github.com/amaan18/tsalgo/issues
-[license-shield]: https://img.shields.io/github/license/amaan18/tsalgo.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/amaan18/tsalgo.svg?color=red&style=for-the-badge
 [license-url]: https://github.com/amaan18/tsalgo/blob/release/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
