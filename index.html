@@ -1,0 +1,212 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tsalgo</title>
+	<meta name="description" content="Documentation for tsalgo">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">tsalgo</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>tsalgo</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p><a href="https://github.com/amaan18/tsalgo/stargazers"><img src="https://img.shields.io/github/stars/amaan18/tsalgo.svg?style=for-the-badge" alt="Stargazers"></a>
+					<a href="https://github.com/amaan18/tsalgo/issues"><img src="https://img.shields.io/github/issues/amaan18/tsalgo.svg?style=for-the-badge" alt="Issues"></a>
+				<a href="https://github.com/amaan18/tsalgo/blob/release/LICENSE"><img src="https://img.shields.io/github/license/amaan18/tsalgo.svg?style=for-the-badge" alt="MIT License"></a></p>
+				<p><a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release"></a></p>
+				<!-- PROJECT LOGO -->
+				<br />
+				<p align="center">
+					<h2 align="center">TsAlgo</h3>
+						<p align="center">
+							Typed data structures, algorithms, and utility functions library for JavaScript/TypeScript
+							<br />
+							<a href="https://amaan18.github.io/tsalgo"><strong>Explore the docs »</strong></a>
+							<a href="https://npmjs.com/package/tsalgo"><strong>NPM »</strong></a>
+							<br />
+							<br />
+							<a href="https://github.com/Amaan18/tsalgo/issues">Report Bug</a>
+							·
+							<a href="https://github.com/Amaan18/tsalgo/issues">Request Feature</a>
+						</p>
+				</p>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h3>Installation</h3>
+				</a>
+				<ul>
+					<li>Install with npm<pre><code class="language-sh">npm install tsalgo
+</code></pre>
+					</li>
+					<li>or yarn<pre><code class="language-sh">yarn add tsalgo
+</code></pre>
+					</li>
+				</ul>
+				<!-- USAGE EXAMPLES -->
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { LinkedList } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;tsalgo&#x27;</span>;
+</code></pre>
+				<p>or import all</p>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> Collections <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;tsalgo&#x27;</span>;
+</code></pre>
+				<p>All implementations use TypeScript generics.</p>
+				<p>Use with TypeScript instead of JavaScript to get complete Intellisense + type-safety.</p>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { LinkedList } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;tsalgo&#x27;</span>;
+
+<span class="hljs-keyword">const</span> ll = <span class="hljs-keyword">new</span> LinkedList&lt;<span class="hljs-built_in">number</span>&gt;();
+
+ll.push(<span class="hljs-number">100</span>); <span class="hljs-comment">// push adds to the end of the list</span>
+ll.push(<span class="hljs-number">200</span>);
+ll.push(<span class="hljs-number">300</span>);
+
+<span class="hljs-comment">// Current state = 100 -&gt; 200 -&gt; 300</span>
+
+<span class="hljs-built_in">console</span>.log(ll.shift()); <span class="hljs-comment">// prints 100</span>
+<span class="hljs-built_in">console</span>.log(ll.pop()); <span class="hljs-comment">// prints 300</span>
+<span class="hljs-built_in">console</span>.log(ll.size); <span class="hljs-comment">// prints 1</span>
+<span class="hljs-built_in">console</span>.log(ll.pop()); <span class="hljs-comment">// prints 200</span>
+<span class="hljs-built_in">console</span>.log(ll.size); <span class="hljs-comment">// prints 0</span>
+</code></pre>
+				<!-- ROADMAP -->
+				<a href="#roadmap" id="roadmap" style="color: inherit; text-decoration: none;">
+					<h2>Roadmap</h2>
+				</a>
+				<p>This is a fairly new library, but I&#39;m adding stuff everyday. See the <a href="https://github.com/amaan18/amaan18/issues">open issues</a> for a list of proposed features (and known issues).</p>
+				<!-- CONTRIBUTING -->
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
+				</a>
+				<ol>
+					<li>Fork the Project</li>
+					<li>Create your Feature Branch ( <code>git checkout -b feature/something</code>)</li>
+					<li>Commit your changes with commitizen (to follow semantic versioning) (<code>yarn commit</code> or <code>npm run commit</code>)</li>
+					<li>Push to the Branch (<code>git push origin feature/something</code>)</li>
+					<li>Open a Pull Request</li>
+				</ol>
+				<!-- LICENSE -->
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License</h2>
+				</a>
+				<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/doublynode.html" class="tsd-kind-icon">Doubly<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/dummynode.html" class="tsd-kind-icon">Dummy<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/linkedlist.html" class="tsd-kind-icon">Linked<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/node.html" class="tsd-kind-icon">Node</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/idoublenode.html" class="tsd-kind-icon">IDouble<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/ilinkedlist.html" class="tsd-kind-icon">ILinked<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/isinglenode.html" class="tsd-kind-icon">ISingle<wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#defaultequals" class="tsd-kind-icon">default<wbr>Equals</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
