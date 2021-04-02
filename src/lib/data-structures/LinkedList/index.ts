@@ -30,7 +30,6 @@ export default class LinkedList<T> implements ILinkedList<T> {
 	}
 
 	/**
-	 * Adds an element to the front (head) of the LinkedList
 	 * @return {number} The size of the LinkedList
 	 */
 	get size(): number {
