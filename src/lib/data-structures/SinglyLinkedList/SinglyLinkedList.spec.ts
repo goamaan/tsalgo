@@ -1,13 +1,13 @@
 import anyTest, { TestInterface } from 'ava';
 
-import LinkedList from './index';
-const test = anyTest as TestInterface<LinkedList<number>>;
+import SinglyLinkedList from './index';
+const test = anyTest as TestInterface<SinglyLinkedList<number>>;
 
 test.beforeEach((t) => {
-	t.context = new LinkedList<number>();
+	t.context = new SinglyLinkedList<number>();
 });
 
-test('LinkedList constructor', (t) => {
+test('SinglyLinkedList constructor', (t) => {
 	const ll = t.context;
 	t.truthy(ll);
 	t.is(ll.size, 0);
@@ -83,48 +83,12 @@ test('peek and peekFirst', (t) => {
 	t.is(ll.peek(), 2);
 	t.is(ll.size, 1);
 	ll.push(3);
-	t.is(ll.peekFirst(), 2);
+	t.is(ll.peek(), 2);
 	ll.unshift(4);
-	t.is(ll.peekFirst(), 4);
+	t.is(ll.peek(), 4);
 	ll.shift();
 	ll.shift();
 	ll.shift();
 	t.is(ll.peek(), undefined);
-	t.is(ll.peekFirst(), undefined);
-});
-
-test('peekLast', (t) => {
-	const ll = t.context;
-	ll.push(2);
-	t.is(ll.size, 1);
-	t.is(ll.peekLast(), 2);
-	t.is(ll.size, 1);
-	ll.push(3);
-	t.is(ll.peekLast(), 3);
-	ll.unshift(4);
-	t.is(ll.peekLast(), 3);
-	ll.shift();
-	ll.shift();
-	ll.shift();
-	t.is(ll.peekLast(), undefined);
-});
-
-test('toArray', (t) => {
-	const ll = t.context;
-	ll.push(2);
-	ll.push(3);
-	ll.unshift(4);
-	t.deepEqual(ll.toArray(), [4, 2, 3]);
-});
-
-test('from', (t) => {
-	const arr = [4, 3, 2, 1];
-	const ll = LinkedList.from(arr);
-	t.is(ll.size, 4);
-	t.is(ll.peek(), 4);
-	t.is(ll.peekLast(), 1);
-	ll.pop();
-	ll.shift();
-	t.is(ll.peek(), 3);
-	t.is(ll.peekLast(), 2);
+	t.is(ll.peek(), undefined);
 });
