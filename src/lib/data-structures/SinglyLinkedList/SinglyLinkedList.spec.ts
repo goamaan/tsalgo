@@ -78,12 +78,12 @@ test('peek and peekFirst', (t) => {
 	t.is(ll.peek(), 2);
 	t.is(ll.size, 1);
 	ll.push(3);
-	t.is(ll.peekFirst(), 2);
+	t.is(ll.peek(), 2);
 	ll.unshift(4);
-	t.is(ll.peekFirst(), 4);
+	t.is(ll.peek(), 4);
 	ll.shift();
 	ll.shift();
 	ll.shift();
 	t.is(ll.peek(), undefined);
-	t.is(ll.peekFirst(), undefined);
+	t.is(ll.peek(), undefined);
 });

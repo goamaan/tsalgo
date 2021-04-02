@@ -7,7 +7,6 @@ export interface ISinglyLinkedList<T> {
 	shift(): T | undefined;
 	isEmpty(): boolean;
 	peek(): T | undefined;
-	peekFirst(): T | undefined;
 }
 
 export default class SinglyLinkedList<T> implements ISinglyLinkedList<T> {
@@ -128,14 +127,6 @@ export default class SinglyLinkedList<T> implements ISinglyLinkedList<T> {
 	 * @return {*} The element at the front of the LinkedList
 	 */
 	peek(): T | undefined {
-		return this.isEmpty() || !this.head ? undefined : this.head.value;
-	}
-
-	/**
-	 * Returns the element at the front of the LinkedList without removing it
-	 * @return {*} The element at the front of the LinkedList
-	 */
-	peekFirst(): T | undefined {
 		return this.isEmpty() || !this.head ? undefined : this.head.value;
 	}
 }
