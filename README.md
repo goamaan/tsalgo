@@ -14,6 +14,7 @@
 	Typed data structures, algorithms, and utility functions library for JavaScript/TypeScript
     <br />
     <a href="https://amaan18.github.io/tsalgo"><strong>Explore the docs »</strong></a>
+    <a href="https://npmjs.com/package/tsalgo"><strong>NPM »</strong></a>
     <br />
     <br />
     <a href="https://github.com/Amaan18/tsalgo/issues">Report Bug</a>
