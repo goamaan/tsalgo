@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LinkedList | tsalgo</title>
+	<title>Stack | tsalgo</title>
 	<meta name="description" content="Documentation for tsalgo">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="linkedlist.html">LinkedList</a>
+					<a href="stack.html">Stack</a>
 				</li>
 			</ul>
-			<h1>Class LinkedList&lt;T&gt;</h1>
+			<h1>Class Stack&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -78,14 +78,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">LinkedList</span>
+						<span class="target">Stack</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/ilinkedlist.html" class="tsd-signature-type">ILinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/istack.html" class="tsd-signature-type">IStack</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -95,36 +95,31 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="linkedlist.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="stack.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="linkedlist.html#_size" class="tsd-kind-icon">_size</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="linkedlist.html#head" class="tsd-kind-icon">head</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="linkedlist.html#tail" class="tsd-kind-icon">tail</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="stack.html#_size" class="tsd-kind-icon">_size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="stack.html#head" class="tsd-kind-icon">head</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="linkedlist.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="stack.html#size" class="tsd-kind-icon">size</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="linkedlist.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="linkedlist.html#peek" class="tsd-kind-icon">peek</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="linkedlist.html#peekfirst" class="tsd-kind-icon">peek<wbr>First</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="linkedlist.html#peeklast" class="tsd-kind-icon">peek<wbr>Last</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="linkedlist.html#pop" class="tsd-kind-icon">pop</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="linkedlist.html#push" class="tsd-kind-icon">push</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="linkedlist.html#shift" class="tsd-kind-icon">shift</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="linkedlist.html#toarray" class="tsd-kind-icon">to<wbr>Array</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="linkedlist.html#unshift" class="tsd-kind-icon">unshift</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="linkedlist.html#from" class="tsd-kind-icon">from</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stack.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stack.html#peek" class="tsd-kind-icon">peek</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stack.html#pop" class="tsd-kind-icon">pop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stack.html#push" class="tsd-kind-icon">push</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stack.html#toarray" class="tsd-kind-icon">to<wbr>Array</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="stack.html#from" class="tsd-kind-icon">from</a></li>
 							</ul>
 						</section>
 					</div>
@@ -136,22 +131,21 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Linked<wbr>List<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="linkedlist.html" class="tsd-signature-type">LinkedList</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Stack<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="stack.html" class="tsd-signature-type">Stack</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L18">lib/data-structures/LinkedList/index.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/Stack/index.ts#L13">lib/data-structures/Stack/index.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Default LinkedList implementation using double pointers.
-									Use this over SinglyLinkedList unless memory is very limited.</p>
+									<p>Stack implementation using single head pointer</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="linkedlist.html" class="tsd-signature-type">LinkedList</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="stack.html" class="tsd-signature-type">Stack</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -164,27 +158,17 @@
 					<div class="tsd-signature tsd-kind-icon">_size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L18">lib/data-structures/LinkedList/index.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/Stack/index.ts#L13">lib/data-structures/Stack/index.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="head" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> head</h3>
-					<div class="tsd-signature tsd-kind-icon">head<span class="tsd-signature-symbol">:</span> <a href="dummynode.html" class="tsd-signature-type">DummyNode</a></div>
+					<div class="tsd-signature tsd-kind-icon">head<span class="tsd-signature-symbol">:</span> <a href="doublynode.html" class="tsd-signature-type">DoublyNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L16">lib/data-structures/LinkedList/index.ts:16</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="tail" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> tail</h3>
-					<div class="tsd-signature tsd-kind-icon">tail<span class="tsd-signature-symbol">:</span> <a href="dummynode.html" class="tsd-signature-type">DummyNode</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L17">lib/data-structures/LinkedList/index.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/Stack/index.ts#L12">lib/data-structures/Stack/index.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -201,13 +185,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L35">lib/data-structures/LinkedList/index.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/Stack/index.ts#L26">lib/data-structures/Stack/index.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The size of the LinkedList</p>
+							<p>The size of the Stack</p>
 						</li>
 					</ul>
 				</section>
@@ -223,14 +207,14 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/ilinkedlist.html">ILinkedList</a>.<a href="../interfaces/ilinkedlist.html#isempty">isEmpty</a></p>
+								<p>Implementation of <a href="../interfaces/istack.html">IStack</a>.<a href="../interfaces/istack.html#isempty">isEmpty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L111">lib/data-structures/LinkedList/index.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/Stack/index.ts#L62">lib/data-structures/Stack/index.ts:62</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns true if the LinkedList is empty</p>
+									<p>Returns true if the Stack is empty</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -246,66 +230,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/ilinkedlist.html">ILinkedList</a>.<a href="../interfaces/ilinkedlist.html#peek">peek</a></p>
+								<p>Implementation of <a href="../interfaces/istack.html">IStack</a>.<a href="../interfaces/istack.html#peek">peek</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L119">lib/data-structures/LinkedList/index.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/Stack/index.ts#L70">lib/data-structures/Stack/index.ts:70</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the element at the front of the LinkedList without removing it</p>
+									<p>Returns the element at the top of the Stack without removing it</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
-							<p>The element at the front of the LinkedList</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="peekfirst" class="tsd-anchor"></a>
-					<h3>peek<wbr>First</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">peek<wbr>First<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/ilinkedlist.html">ILinkedList</a>.<a href="../interfaces/ilinkedlist.html#peekfirst">peekFirst</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L129">lib/data-structures/LinkedList/index.ts:129</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the element at the front of the LinkedList without removing it</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
-							<p>The element at the front of the LinkedList</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="peeklast" class="tsd-anchor"></a>
-					<h3>peek<wbr>Last</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">peek<wbr>Last<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/ilinkedlist.html">ILinkedList</a>.<a href="../interfaces/ilinkedlist.html#peeklast">peekLast</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L139">lib/data-structures/LinkedList/index.ts:139</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns the element at the end of the LinkedList without removing it</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
-							<p>The element at the end of the LinkedList</p>
+							<p>The element at the top of the Stack</p>
 						</li>
 					</ul>
 				</section>
@@ -318,14 +254,14 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/ilinkedlist.html">ILinkedList</a>.<a href="../interfaces/ilinkedlist.html#pop">pop</a></p>
+								<p>Implementation of <a href="../interfaces/istack.html">IStack</a>.<a href="../interfaces/istack.html#pop">pop</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L75">lib/data-structures/LinkedList/index.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/Stack/index.ts#L47">lib/data-structures/Stack/index.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Removes the element at the end of the LinkedList</p>
+									<p>Removes the element at the top of the Stack</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
@@ -342,14 +278,14 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/ilinkedlist.html">ILinkedList</a>.<a href="../interfaces/ilinkedlist.html#push">push</a></p>
+								<p>Implementation of <a href="../interfaces/istack.html">IStack</a>.<a href="../interfaces/istack.html#push">push</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L44">lib/data-structures/LinkedList/index.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/Stack/index.ts#L35">lib/data-structures/Stack/index.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Adds an element to the end (tail) of the LinkedList</p>
+									<p>Adds an element to the top of the Stack</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -359,31 +295,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The new size of the LinkedList</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="shift" class="tsd-anchor"></a>
-					<h3>shift</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">shift<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/ilinkedlist.html">ILinkedList</a>.<a href="../interfaces/ilinkedlist.html#shift">shift</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L93">lib/data-structures/LinkedList/index.ts:93</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Removes the element at the front of the LinkedList</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
-							<p>The removed element</p>
+							<p>The new size of the Stack</p>
 						</li>
 					</ul>
 				</section>
@@ -396,14 +308,14 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/ilinkedlist.html">ILinkedList</a>.<a href="../interfaces/ilinkedlist.html#toarray">toArray</a></p>
+								<p>Implementation of <a href="../interfaces/istack.html">IStack</a>.<a href="../interfaces/istack.html#toarray">toArray</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L149">lib/data-structures/LinkedList/index.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/Stack/index.ts#L80">lib/data-structures/Stack/index.ts:80</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Transforms the LinkedList to an Array</p>
+									<p>Transforms the Stack to an Array traversing from top to bottom</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -411,52 +323,22 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="unshift" class="tsd-anchor"></a>
-					<h3>unshift</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">unshift<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/ilinkedlist.html">ILinkedList</a>.<a href="../interfaces/ilinkedlist.html#unshift">unshift</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L60">lib/data-structures/LinkedList/index.ts:60</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Adds an element to the front (head) of the LinkedList</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>element: <span class="tsd-signature-type">T</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The new size of the LinkedList</p>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
 					<a name="from" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> from</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">from&lt;T&gt;<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="linkedlist.html" class="tsd-signature-type">LinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">from&lt;T&gt;<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="stack.html" class="tsd-signature-type">Stack</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/LinkedList/index.ts#L164">lib/data-structures/LinkedList/index.ts:164</a></li>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/ea4218c/src/lib/data-structures/Stack/index.ts#L95">lib/data-structures/Stack/index.ts:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a LinkedList from an Array of elements</p>
+									<p>Creates a Stack from an Array of elements</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -471,8 +353,8 @@
 									<h5>arr: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="linkedlist.html" class="tsd-signature-type">LinkedList</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A new LinkedList</p>
+							<h4 class="tsd-returns-title">Returns <a href="stack.html" class="tsd-signature-type">Stack</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A new Stack</p>
 						</li>
 					</ul>
 				</section>
@@ -494,69 +376,54 @@
 					<li class=" tsd-kind-class">
 						<a href="dummynode.html" class="tsd-kind-icon">Dummy<wbr>Node</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-class tsd-has-type-parameter">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="linkedlist.html" class="tsd-kind-icon">Linked<wbr>List</a>
-						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="linkedlist.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="linkedlist.html#_size" class="tsd-kind-icon">_size</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="linkedlist.html#head" class="tsd-kind-icon">head</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="linkedlist.html#tail" class="tsd-kind-icon">tail</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="linkedlist.html#size" class="tsd-kind-icon">size</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="linkedlist.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="linkedlist.html#peek" class="tsd-kind-icon">peek</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="linkedlist.html#peekfirst" class="tsd-kind-icon">peek<wbr>First</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="linkedlist.html#peeklast" class="tsd-kind-icon">peek<wbr>Last</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="linkedlist.html#pop" class="tsd-kind-icon">pop</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="linkedlist.html#push" class="tsd-kind-icon">push</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="linkedlist.html#shift" class="tsd-kind-icon">shift</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="linkedlist.html#toarray" class="tsd-kind-icon">to<wbr>Array</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="linkedlist.html#unshift" class="tsd-kind-icon">unshift</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
-								<a href="linkedlist.html#from" class="tsd-kind-icon">from</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="node.html" class="tsd-kind-icon">Node</a>
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="singlylinkedlist.html" class="tsd-kind-icon">Singly<wbr>Linked<wbr>List</a>
 					</li>
-					<li class=" tsd-kind-class tsd-has-type-parameter">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-has-type-parameter">
 						<a href="stack.html" class="tsd-kind-icon">Stack</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="stack.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="stack.html#_size" class="tsd-kind-icon">_size</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="stack.html#head" class="tsd-kind-icon">head</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="stack.html#size" class="tsd-kind-icon">size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="stack.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="stack.html#peek" class="tsd-kind-icon">peek</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="stack.html#pop" class="tsd-kind-icon">pop</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="stack.html#push" class="tsd-kind-icon">push</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="stack.html#toarray" class="tsd-kind-icon">to<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="stack.html#from" class="tsd-kind-icon">from</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/idoublenode.html" class="tsd-kind-icon">IDouble<wbr>Node</a>
 					</li>
