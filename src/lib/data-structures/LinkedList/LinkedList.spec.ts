@@ -1,15 +1,20 @@
-import test from 'ava';
+import anyTest, { TestInterface } from 'ava';
 
 import LinkedList from './index';
+const test = anyTest as TestInterface<LinkedList<number>>;
+
+test.beforeEach((t) => {
+	t.context = new LinkedList<number>();
+});
 
 test('LinkedList constructor', (t) => {
-	const ll = new LinkedList<number>();
+	const ll = t.context;
 	t.truthy(ll);
 	t.is(ll.size, 0);
 });
 
 test('push', (t) => {
-	const ll = new LinkedList<number>();
+	const ll = t.context;
 	ll.push(1);
 	t.is(ll.size, 1);
 	ll.push(2);
@@ -17,7 +22,7 @@ test('push', (t) => {
 });
 
 test('unshift', (t) => {
-	const ll = new LinkedList<number>();
+	const ll = t.context;
 	ll.unshift(1);
 	t.is(ll.size, 1);
 	ll.unshift(2);
@@ -25,7 +30,7 @@ test('unshift', (t) => {
 });
 
 test('pop', (t) => {
-	const ll = new LinkedList<number>();
+	const ll = t.context;
 	ll.push(-1);
 	t.is(ll.size, 1);
 	ll.push(-2);
@@ -44,7 +49,7 @@ test('pop', (t) => {
 });
 
 test('shift', (t) => {
-	const ll = new LinkedList<number>();
+	const ll = t.context;
 	ll.push(-1);
 	t.is(ll.size, 1);
 	ll.push(-2);
@@ -63,7 +68,7 @@ test('shift', (t) => {
 });
 
 test('isEmpty', (t) => {
-	const ll = new LinkedList<number>();
+	const ll = t.context;
 	t.true(ll.isEmpty());
 	ll.push(1);
 	t.false(ll.isEmpty());
@@ -72,7 +77,7 @@ test('isEmpty', (t) => {
 });
 
 test('peek and peekFirst', (t) => {
-	const ll = new LinkedList<number>();
+	const ll = t.context;
 	ll.push(2);
 	t.is(ll.size, 1);
 	t.is(ll.peek(), 2);
@@ -89,7 +94,7 @@ test('peek and peekFirst', (t) => {
 });
 
 test('peekLast', (t) => {
-	const ll = new LinkedList<number>();
+	const ll = t.context;
 	ll.push(2);
 	t.is(ll.size, 1);
 	t.is(ll.peekLast(), 2);
@@ -105,7 +110,7 @@ test('peekLast', (t) => {
 });
 
 test('toArray', (t) => {
-	const ll = new LinkedList<number>();
+	const ll = t.context;
 	ll.push(2);
 	ll.push(3);
 	ll.unshift(4);
