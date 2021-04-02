@@ -75,6 +75,13 @@ console.log(ll.size); // prints 0
 
 ## Roadmap
 
+### Currently supported data structures:
+
+-   LinkedList
+    -   DoublyLinkedList (default)
+    -   SinglyLinkedList
+-   Stack
+
 This is a fairly new library, but I'm adding stuff everyday. See the [open issues](https://github.com/amaan18/amaan18/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->

@@ -21,16 +21,16 @@ export default class Stack<T> implements IStack<T> {
 	}
 
 	/**
-	 * @return {number} The size of the LinkedList
+	 * @return {number} The size of the Stack
 	 */
 	get size(): number {
 		return this._size;
 	}
 
 	/**
-	 * Adds an element to the end (tail) of the LinkedList
+	 * Adds an element to the top of the Stack
 	 * @param {*} element
-	 * @return {number} The new size of the LinkedList
+	 * @return {number} The new size of the Stack
 	 */
 	push(element: T): number {
 		const node = new DoublyNode(element);
@@ -41,7 +41,7 @@ export default class Stack<T> implements IStack<T> {
 	}
 
 	/**
-	 * Removes the element at the end of the LinkedList
+	 * Removes the element at the top of the Stack
 	 * @return {*} The removed element
 	 */
 	pop(): T | undefined {
@@ -56,7 +56,7 @@ export default class Stack<T> implements IStack<T> {
 	}
 
 	/**
-	 * Returns true if the LinkedList is empty
+	 * Returns true if the Stack is empty
 	 * @return {boolean}
 	 */
 	isEmpty(): boolean {
@@ -64,8 +64,8 @@ export default class Stack<T> implements IStack<T> {
 	}
 
 	/**
-	 * Returns the element at the front of the LinkedList without removing it
-	 * @return {*} The element at the front of the LinkedList
+	 * Returns the element at the top of the Stack without removing it
+	 * @return {*} The element at the top of the Stack
 	 */
 	peek(): T | undefined {
 		return this.isEmpty() || !this.head
@@ -74,7 +74,7 @@ export default class Stack<T> implements IStack<T> {
 	}
 
 	/**
-	 * Transforms the LinkedList to an Array
+	 * Transforms the Stack to an Array traversing from top to bottom
 	 * @return {Array<T>} An array of elements
 	 */
 	toArray(): T[] {
@@ -88,9 +88,9 @@ export default class Stack<T> implements IStack<T> {
 	}
 
 	/**
-	 * Creates a LinkedList from an Array of elements
+	 * Creates a Stack from an Array of elements
 	 * @param {Array<T>} arr
-	 * @return {LinkedList} A new LinkedList
+	 * @return {Stack} A new Stack
 	 */
 	static from<T>(arr: Array<T>): Stack<T> {
 		const ret = new Stack<T>();
