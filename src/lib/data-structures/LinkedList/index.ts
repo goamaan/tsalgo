@@ -18,8 +18,7 @@ export default class LinkedList<T> implements ILinkedList<T> {
 	private _size: number;
 
 	/**
-	 * Default LinkedList implementation using double pointers.
-	 * Use this over SinglyLinkedList unless memory is very limited.
+	 * Creates a LinkedList (default LinkedList implementation using double pointers)
 	 */
 	constructor() {
 		this._size = 0;

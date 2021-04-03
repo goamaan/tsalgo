@@ -14,7 +14,7 @@ export default class SinglyLinkedList<T> implements ISinglyLinkedList<T> {
 	private _size: number;
 
 	/**
-	 * SinglyLinkedList implementation using a single (head) pointer.
+	 * Creates a SinglyLinkedList (implementation using a single (head) pointer).
 	 * Only has basic functionality -> Use LinkedList over this unless memory is limited.
 	 */
 	constructor() {

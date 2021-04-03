@@ -15,8 +15,7 @@ export default class Queue<T> implements IQueue<T> {
 	private _size: number;
 
 	/**
-	 * Default LinkedList implementation using double pointers.
-	 * Use this over SinglyLinkedList unless memory is very limited.
+	 * Creates a Queue
 	 */
 	constructor() {
 		this._size = 0;
@@ -27,16 +26,16 @@ export default class Queue<T> implements IQueue<T> {
 	}
 
 	/**
-	 * @return {number} The size of the LinkedList
+	 * @return {number} The size of the Queue
 	 */
 	get size(): number {
 		return this._size;
 	}
 
 	/**
-	 * Adds an element to the end (tail) of the LinkedList
+	 * Adds an element to the end of the Queue
 	 * @param {*} element
-	 * @return {number} The new size of the LinkedList
+	 * @return {number} The new size of the Queue
 	 */
 	enqueue(element: T): number {
 		const node = new DoublyNode(element);
@@ -50,7 +49,7 @@ export default class Queue<T> implements IQueue<T> {
 	}
 
 	/**
-	 * Removes the element at the front of the LinkedList
+	 * Removes the element at the front of the Queue
 	 * @return {*} The removed element
 	 */
 	dequeue(): T | undefined {
@@ -68,7 +67,7 @@ export default class Queue<T> implements IQueue<T> {
 	}
 
 	/**
-	 * Returns true if the LinkedList is empty
+	 * Returns true if the Queue is empty
 	 * @return {boolean}
 	 */
 	isEmpty(): boolean {
@@ -76,8 +75,8 @@ export default class Queue<T> implements IQueue<T> {
 	}
 
 	/**
-	 * Returns the element at the front of the LinkedList without removing it
-	 * @return {*} The element at the front of the LinkedList
+	 * Returns the element at the front of the Queue without removing it
+	 * @return {*} The element at the front of the Queue
 	 */
 	front(): T | undefined {
 		return this.isEmpty()
@@ -86,8 +85,8 @@ export default class Queue<T> implements IQueue<T> {
 	}
 
 	/**
-	 * Returns the element at the end of the LinkedList without removing it
-	 * @return {*} The element at the end of the LinkedList
+	 * Returns the element at the back of the Queue without removing it
+	 * @return {*} The element at the back of the Queue
 	 */
 	back(): T | undefined {
 		return this.isEmpty()
@@ -96,7 +95,7 @@ export default class Queue<T> implements IQueue<T> {
 	}
 
 	/**
-	 * Transforms the LinkedList to an Array
+	 * Transforms the Queue to an Array
 	 * @return {Array<T>} An array of elements
 	 */
 	toArray(): T[] {
@@ -110,9 +109,9 @@ export default class Queue<T> implements IQueue<T> {
 	}
 
 	/**
-	 * Creates a LinkedList from an Array of elements
+	 * Creates a Queue from an Array of elements
 	 * @param {Array<T>} arr
-	 * @return {LinkedList} A new LinkedList
+	 * @return {Queue} A new Queue
 	 */
 	static from<T>(arr: Array<T>): Queue<T> {
 		const ret = new Queue<T>();
