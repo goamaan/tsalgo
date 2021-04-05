@@ -13,7 +13,7 @@ export default class Stack<T> implements IStack<T> {
 	private _size: number;
 
 	/**
-	 * Stack implementation using single head pointer
+	 * Creates a Stack
 	 */
 	constructor() {
 		this._size = 0;
