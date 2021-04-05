@@ -1,6 +1,6 @@
 {
   "name": "tsalgo",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Typed data structures, algorithms, and utility functions library for JavaScript/TypeScript",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
