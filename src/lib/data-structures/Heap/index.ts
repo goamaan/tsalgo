@@ -24,10 +24,11 @@ export default class Heap<T> implements IHeap<T> {
 	private heap: Array<T> = [];
 
 	/**
-	 * Creates a Heap (MinHeap by default)
+	 * Creates an empty Heap (MinHeap by default)
 	 * Takes an optional comparison function to assign priorities to the elements
 	 * Uses default comparison with equality operators otherwise
-	 * @param {ICompareFn<T>} compareFn
+	 * @param {ICompareFn<T>} compareFn Must return a positive integer, negative integer,
+	 * or 0 after comparing 2 elements based on their priorities.
 	 */
 	constructor(compareFn: ICompareFn<T> = defaultCompareFn) {
 		this.compareFn = compareFn;
@@ -41,7 +42,7 @@ export default class Heap<T> implements IHeap<T> {
 	}
 
 	/**
-	 * Adds an arbitraty number of elements to the the Heap
+	 * Adds any number of elements to the the Heap
 	 * @param {*} element
 	 * @return {number} The new size of the Heap
 	 */
@@ -56,7 +57,7 @@ export default class Heap<T> implements IHeap<T> {
 	}
 
 	/**
-	 * Removes the element at the end of the Heap
+	 * Removes the element at the top (highest priority) of the Heap
 	 * @return {*} The removed element
 	 */
 	pop(): T | undefined {
@@ -81,8 +82,8 @@ export default class Heap<T> implements IHeap<T> {
 	}
 
 	/**
-	 * Returns the element at the front of the Heap without removing it
-	 * @return {*} The element at the front of the Heap
+	 * Returns the element at the top of the Heap without removing it
+	 * @return {*} The element at the top of the Heap
 	 */
 	peek(): T | undefined {
 		return this.isEmpty() ? undefined : this.heap[0];
@@ -96,6 +97,9 @@ export default class Heap<T> implements IHeap<T> {
 		return this.heap;
 	}
 
+	/**
+	 * Clears the heap
+	 */
 	clear() {
 		this.heap.length = 0;
 	}
@@ -161,6 +165,13 @@ export default class Heap<T> implements IHeap<T> {
 }
 
 export class MaxHeap<T> extends Heap<T> implements IHeap<T> {
+	/**
+	 * Creates an empty MaxHeap
+	 * Takes an optional comparison function to assign priorities to the elements
+	 * Uses default comparison with equality operators otherwise
+	 * @param {ICompareFn<T>} compareFn Must return a positive integer, negative integer,
+	 * or 0 after comparing 2 elements based on their priorities.
+	 */
 	constructor(compareFn: ICompareFn<T> = defaultCompareFn) {
 		super(compareFn);
 		this.compareFn = reverseCompareFn(compareFn);
