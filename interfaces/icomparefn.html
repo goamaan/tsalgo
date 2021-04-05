@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ISingleNode | tsalgo</title>
+	<title>ICompareFn | tsalgo</title>
 	<meta name="description" content="Documentation for tsalgo">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,55 +56,56 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="isinglenode.html">ISingleNode</a>
+					<a href="icomparefn.html">ICompareFn</a>
 				</li>
 			</ul>
-			<h1>Interface ISingleNode</h1>
+			<h1>Interface ICompareFn&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T</h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ISingleNode</span>
+						<span class="target">ICompareFn</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/node.html" class="tsd-signature-type">Node</a></li>
+				<h3 class="tsd-before-signature">Callable</h3>
+				<ul class="tsd-signatures tsd-kind-interface tsd-has-type-parameter">
+					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 				</ul>
-			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="isinglenode.html#next" class="tsd-kind-icon">next</a></li>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/utils.ts#L5">lib/utils.ts:5</a></li>
 							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="next" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> next</h3>
-					<div class="tsd-signature tsd-kind-icon">next<span class="tsd-signature-symbol">:</span> <a href="isinglenode.html" class="tsd-signature-type">ISingleNode</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/Node/index.ts#L2">lib/data-structures/Node/index.ts:2</a></li>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>a: <span class="tsd-signature-type">T</span></h5>
+							</li>
+							<li>
+								<h5>b: <span class="tsd-signature-type">T</span></h5>
+							</li>
 						</ul>
-					</aside>
-				</section>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+					</li>
+				</ul>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -147,9 +148,13 @@
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="../classes/stack.html" class="tsd-kind-icon">Stack</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-has-type-parameter">
 						<a href="icomparefn.html" class="tsd-kind-icon">ICompare<wbr>Fn</a>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="idoublenode.html" class="tsd-kind-icon">IDouble<wbr>Node</a>
 					</li>
@@ -165,18 +170,9 @@
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="iqueue.html" class="tsd-kind-icon">IQueue</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class=" tsd-kind-interface">
 						<a href="isinglenode.html" class="tsd-kind-icon">ISingle<wbr>Node</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="isinglenode.html#next" class="tsd-kind-icon">next</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="isinglylinkedlist.html" class="tsd-kind-icon">ISingly<wbr>Linked<wbr>List</a>
 					</li>

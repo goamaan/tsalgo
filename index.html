@@ -138,6 +138,13 @@ ll.push(<span class="hljs-number">300</span>);
 						</ul>
 					</li>
 					<li>  Stack</li>
+					<li>  Queue</li>
+					<li>Heap<ul>
+							<li>  MinHeap (default)</li>
+							<li>  MaxHeap</li>
+						</ul>
+					</li>
+					<li>  Priority Queue (Heap based)</li>
 				</ul>
 				<p>This is a fairly new library, but I&#39;m adding stuff everyday. See the <a href="https://github.com/amaan18/amaan18/issues">open issues</a> for a list of proposed features (and known issues).</p>
 				<!-- CONTRIBUTING -->
@@ -175,10 +182,22 @@ ll.push(<span class="hljs-number">300</span>);
 						<a href="classes/dummynode.html" class="tsd-kind-icon">Dummy<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/heap.html" class="tsd-kind-icon">Heap</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/linkedlist.html" class="tsd-kind-icon">Linked<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/maxheap.html" class="tsd-kind-icon">Max<wbr>Heap</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/node.html" class="tsd-kind-icon">Node</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/priorityqueue.html" class="tsd-kind-icon">Priority<wbr>Queue</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/queue.html" class="tsd-kind-icon">Queue</a>
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/singlylinkedlist.html" class="tsd-kind-icon">Singly<wbr>Linked<wbr>List</a>
@@ -186,11 +205,23 @@ ll.push(<span class="hljs-number">300</span>);
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="classes/stack.html" class="tsd-kind-icon">Stack</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/icomparefn.html" class="tsd-kind-icon">ICompare<wbr>Fn</a>
+					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/idoublenode.html" class="tsd-kind-icon">IDouble<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/iheap.html" class="tsd-kind-icon">IHeap</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="interfaces/ilinkedlist.html" class="tsd-kind-icon">ILinked<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/ipriorityqueue.html" class="tsd-kind-icon">IPriority<wbr>Queue</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/iqueue.html" class="tsd-kind-icon">IQueue</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/isinglenode.html" class="tsd-kind-icon">ISingle<wbr>Node</a>
@@ -201,8 +232,29 @@ ll.push(<span class="hljs-number">300</span>);
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="interfaces/istack.html" class="tsd-kind-icon">IStack</a>
 					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#rootindex" class="tsd-kind-icon">root<wbr>Index</a>
+					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
-						<a href="globals.html#defaultequals" class="tsd-kind-icon">default<wbr>Equals</a>
+						<a href="globals.html#defaultcomparefn" class="tsd-kind-icon">default<wbr>Compare<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#defaultequalsfn" class="tsd-kind-icon">default<wbr>Equals<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#leftindex" class="tsd-kind-icon">left<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#parentindex" class="tsd-kind-icon">parent<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#reversecomparefn" class="tsd-kind-icon">reverse<wbr>Compare<wbr>Fn</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#rightindex" class="tsd-kind-icon">right<wbr>Index</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#swapelements" class="tsd-kind-icon">swap<wbr>Elements</a>
 					</li>
 				</ul>
 			</nav>
@@ -224,6 +276,13 @@ ll.push(<span class="hljs-number">300</span>);
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
 			</ul>
 		</div>
 	</div>

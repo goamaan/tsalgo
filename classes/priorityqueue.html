@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Stack | tsalgo</title>
+	<title>PriorityQueue | tsalgo</title>
 	<meta name="description" content="Documentation for tsalgo">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="stack.html">Stack</a>
+					<a href="priorityqueue.html">PriorityQueue</a>
 				</li>
 			</ul>
-			<h1>Class Stack&lt;T&gt;</h1>
+			<h1>Class PriorityQueue&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -78,14 +78,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Stack</span>
+						<span class="target">PriorityQueue</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/istack.html" class="tsd-signature-type">IStack</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li><a href="../interfaces/ipriorityqueue.html" class="tsd-signature-type">IPriorityQueue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -95,31 +95,31 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="stack.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="priorityqueue.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="stack.html#_size" class="tsd-kind-icon">_size</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="stack.html#head" class="tsd-kind-icon">head</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="priorityqueue.html#heap" class="tsd-kind-icon">heap</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="stack.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="priorityqueue.html#size" class="tsd-kind-icon">size</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stack.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stack.html#peek" class="tsd-kind-icon">peek</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stack.html#pop" class="tsd-kind-icon">pop</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stack.html#push" class="tsd-kind-icon">push</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="stack.html#toarray" class="tsd-kind-icon">to<wbr>Array</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="stack.html#from" class="tsd-kind-icon">from</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="priorityqueue.html#asarray" class="tsd-kind-icon">as<wbr>Array</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="priorityqueue.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="priorityqueue.html#dequeue" class="tsd-kind-icon">dequeue</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="priorityqueue.html#enqueue" class="tsd-kind-icon">enqueue</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="priorityqueue.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="priorityqueue.html#peek" class="tsd-kind-icon">peek</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static"><a href="priorityqueue.html#from" class="tsd-kind-icon">from</a></li>
 							</ul>
 						</section>
 					</div>
@@ -131,21 +131,35 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Stack<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="stack.html" class="tsd-signature-type">Stack</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Priority<wbr>Queue<span class="tsd-signature-symbol">(</span>compareFn<span class="tsd-signature-symbol">?: </span><a href="../interfaces/icomparefn.html" class="tsd-signature-type">ICompareFn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="priorityqueue.html" class="tsd-signature-type">PriorityQueue</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/Stack/index.ts#L13">lib/data-structures/Stack/index.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/PriorityQueue/index.ts#L14">lib/data-structures/PriorityQueue/index.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a Stack</p>
+									<p>Creates an empty PriorityQueue
+										Takes an optional comparison function to assign priorities to the elements
+									Uses default comparison with equality operators otherwise</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="stack.html" class="tsd-signature-type">Stack</a></h4>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> compareFn: <a href="../interfaces/icomparefn.html" class="tsd-signature-type">ICompareFn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = defaultCompareFn</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Must return a positive integer, negative integer,
+											or 0 after comparing 2 elements based on their priorities.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="priorityqueue.html" class="tsd-signature-type">PriorityQueue</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -153,22 +167,12 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_size" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _size</h3>
-					<div class="tsd-signature tsd-kind-icon">_size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="heap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> heap</h3>
+					<div class="tsd-signature tsd-kind-icon">heap<span class="tsd-signature-symbol">:</span> <a href="maxheap.html" class="tsd-signature-type">MaxHeap</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/Stack/index.ts#L13">lib/data-structures/Stack/index.ts:13</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="head" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> head</h3>
-					<div class="tsd-signature tsd-kind-icon">head<span class="tsd-signature-symbol">:</span> <a href="doublynode.html" class="tsd-signature-type">DoublyNode</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/Stack/index.ts#L12">lib/data-structures/Stack/index.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/PriorityQueue/index.ts#L14">lib/data-structures/PriorityQueue/index.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -185,19 +189,120 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/Stack/index.ts#L26">lib/data-structures/Stack/index.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/PriorityQueue/index.ts#L71">lib/data-structures/PriorityQueue/index.ts:71</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The size of the Stack</p>
+							<p>The size of the PriorityQueue</p>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="asarray" class="tsd-anchor"></a>
+					<h3>as<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">as<wbr>Array<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/ipriorityqueue.html">IPriorityQueue</a>.<a href="../interfaces/ipriorityqueue.html#asarray">asArray</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/PriorityQueue/index.ts#L64">lib/data-structures/PriorityQueue/index.ts:64</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the PriorityQueue as an array</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An array of elements</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clear" class="tsd-anchor"></a>
+					<h3>clear</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/ipriorityqueue.html">IPriorityQueue</a>.<a href="../interfaces/ipriorityqueue.html#clear">clear</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/PriorityQueue/index.ts#L78">lib/data-structures/PriorityQueue/index.ts:78</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Clears the PriorityQueue</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dequeue" class="tsd-anchor"></a>
+					<h3>dequeue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dequeue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/ipriorityqueue.html">IPriorityQueue</a>.<a href="../interfaces/ipriorityqueue.html#dequeue">dequeue</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/PriorityQueue/index.ts#L40">lib/data-structures/PriorityQueue/index.ts:40</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes the element with the highest priority</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
+							<p>The removed element</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="enqueue" class="tsd-anchor"></a>
+					<h3>enqueue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">enqueue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>elements<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/ipriorityqueue.html">IPriorityQueue</a>.<a href="../interfaces/ipriorityqueue.html#enqueue">enqueue</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/PriorityQueue/index.ts#L32">lib/data-structures/PriorityQueue/index.ts:32</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds any number of elements to the the PriorityQueue</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>elements: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The new size of the PriorityQueue</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="isempty" class="tsd-anchor"></a>
 					<h3>is<wbr>Empty</h3>
@@ -207,14 +312,14 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/istack.html">IStack</a>.<a href="../interfaces/istack.html#isempty">isEmpty</a></p>
+								<p>Implementation of <a href="../interfaces/ipriorityqueue.html">IPriorityQueue</a>.<a href="../interfaces/ipriorityqueue.html#isempty">isEmpty</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/Stack/index.ts#L62">lib/data-structures/Stack/index.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/PriorityQueue/index.ts#L56">lib/data-structures/PriorityQueue/index.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns true if the Stack is empty</p>
+									<p>Returns true if the PriorityQueue is empty</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -230,96 +335,18 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/istack.html">IStack</a>.<a href="../interfaces/istack.html#peek">peek</a></p>
+								<p>Implementation of <a href="../interfaces/ipriorityqueue.html">IPriorityQueue</a>.<a href="../interfaces/ipriorityqueue.html#peek">peek</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/Stack/index.ts#L70">lib/data-structures/Stack/index.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/PriorityQueue/index.ts#L48">lib/data-structures/PriorityQueue/index.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the element at the top of the Stack without removing it</p>
+									<p>Returns the element with the highest priority without removing it</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
-							<p>The element at the top of the Stack</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="pop" class="tsd-anchor"></a>
-					<h3>pop</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">pop<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/istack.html">IStack</a>.<a href="../interfaces/istack.html#pop">pop</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/Stack/index.ts#L47">lib/data-structures/Stack/index.ts:47</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Removes the element at the top of the Stack</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h4>
-							<p>The removed element</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="push" class="tsd-anchor"></a>
-					<h3>push</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/istack.html">IStack</a>.<a href="../interfaces/istack.html#push">push</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/Stack/index.ts#L35">lib/data-structures/Stack/index.ts:35</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Adds an element to the top of the Stack</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>element: <span class="tsd-signature-type">T</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The new size of the Stack</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="toarray" class="tsd-anchor"></a>
-					<h3>to<wbr>Array</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Array<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/istack.html">IStack</a>.<a href="../interfaces/istack.html#toarray">toArray</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/Stack/index.ts#L80">lib/data-structures/Stack/index.ts:80</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Transforms the Stack to an Array traversing from top to bottom</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
-							<p>An array of elements</p>
+							<p>The element with the highest priority</p>
 						</li>
 					</ul>
 				</section>
@@ -327,18 +354,18 @@
 					<a name="from" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> from</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">from&lt;T&gt;<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="stack.html" class="tsd-signature-type">Stack</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">from&lt;T&gt;<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, compareFn<span class="tsd-signature-symbol">?: </span><a href="../interfaces/icomparefn.html" class="tsd-signature-type">ICompareFn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="priorityqueue.html" class="tsd-signature-type">PriorityQueue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/Stack/index.ts#L95">lib/data-structures/Stack/index.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/Amaan18/tsalgo/blob/2cc087e/src/lib/data-structures/PriorityQueue/index.ts#L87">lib/data-structures/PriorityQueue/index.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Creates a Stack from an Array of elements</p>
+									<p>Creates a PriorityQueue from an Array of elements</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -352,9 +379,12 @@
 								<li>
 									<h5>arr: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> compareFn: <a href="../interfaces/icomparefn.html" class="tsd-signature-type">ICompareFn</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = defaultCompareFn</span></h5>
+								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="stack.html" class="tsd-signature-type">Stack</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A new Stack</p>
+							<h4 class="tsd-returns-title">Returns <a href="priorityqueue.html" class="tsd-signature-type">PriorityQueue</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A new PriorityQueue</p>
 						</li>
 					</ul>
 				</section>
@@ -388,54 +418,54 @@
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="node.html" class="tsd-kind-icon">Node</a>
 					</li>
-					<li class=" tsd-kind-class tsd-has-type-parameter">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-has-type-parameter">
 						<a href="priorityqueue.html" class="tsd-kind-icon">Priority<wbr>Queue</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="priorityqueue.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="priorityqueue.html#heap" class="tsd-kind-icon">heap</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="priorityqueue.html#size" class="tsd-kind-icon">size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="priorityqueue.html#asarray" class="tsd-kind-icon">as<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="priorityqueue.html#clear" class="tsd-kind-icon">clear</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="priorityqueue.html#dequeue" class="tsd-kind-icon">dequeue</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="priorityqueue.html#enqueue" class="tsd-kind-icon">enqueue</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="priorityqueue.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="priorityqueue.html#peek" class="tsd-kind-icon">peek</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
+								<a href="priorityqueue.html#from" class="tsd-kind-icon">from</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="queue.html" class="tsd-kind-icon">Queue</a>
 					</li>
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="singlylinkedlist.html" class="tsd-kind-icon">Singly<wbr>Linked<wbr>List</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-class tsd-has-type-parameter">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="stack.html" class="tsd-kind-icon">Stack</a>
-						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="stack.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="stack.html#_size" class="tsd-kind-icon">_size</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="stack.html#head" class="tsd-kind-icon">head</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="stack.html#size" class="tsd-kind-icon">size</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="stack.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="stack.html#peek" class="tsd-kind-icon">peek</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="stack.html#pop" class="tsd-kind-icon">pop</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="stack.html#push" class="tsd-kind-icon">push</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="stack.html#toarray" class="tsd-kind-icon">to<wbr>Array</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-static">
-								<a href="stack.html#from" class="tsd-kind-icon">from</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="../interfaces/icomparefn.html" class="tsd-kind-icon">ICompare<wbr>Fn</a>
 					</li>
