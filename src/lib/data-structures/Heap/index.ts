@@ -11,6 +11,7 @@ export interface IHeap<T> {
 	isEmpty(): boolean;
 	peek(): T | undefined;
 	asArray(): T[];
+	clear(): void;
 }
 
 const rootIndex = 0;
@@ -93,6 +94,10 @@ export default class Heap<T> implements IHeap<T> {
 	 */
 	asArray(): T[] {
 		return this.heap;
+	}
+
+	clear() {
+		this.heap.length = 0;
 	}
 
 	/**

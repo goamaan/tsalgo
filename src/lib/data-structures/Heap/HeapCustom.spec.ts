@@ -2,7 +2,7 @@ import anyTest, { TestInterface } from 'ava';
 
 import { ICompareFn } from '../../utils';
 
-import Heap from '.';
+import Heap from './index';
 
 const customCompareFn: ICompareFn<customShape> = (
 	a: customShape,

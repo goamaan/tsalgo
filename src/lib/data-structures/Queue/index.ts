@@ -4,7 +4,6 @@ export interface IQueue<T> {
 	dequeue(): T | undefined;
 	isEmpty(): boolean;
 	front(): T | undefined;
-	front(): T | undefined;
 	back(): T | undefined;
 	toArray(): T[];
 }
