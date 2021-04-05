@@ -81,6 +81,11 @@ console.log(ll.size); // prints 0
     -   DoublyLinkedList (default)
     -   SinglyLinkedList
 -   Stack
+-   Queue
+-   Heap
+    -   MinHeap (default)
+    -   MaxHeap
+-   Priority Queue (Heap based)
 
 This is a fairly new library, but I'm adding stuff everyday. See the [open issues](https://github.com/amaan18/amaan18/issues) for a list of proposed features (and known issues).
 
