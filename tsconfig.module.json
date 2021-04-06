@@ -3,8 +3,7 @@
 	"compilerOptions": {
 		"target": "esnext",
 		"outDir": "build/module",
-		"module": "esnext",
-		"lib": ["DOM", "ES2017"]
+		"module": "esnext"
 	},
 	"exclude": ["node_modules/**"]
 }
